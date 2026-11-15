@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +7,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f1ea;
+    background-color: #f7f5ef;
     color: #333;
 }
 
+/* Header */
 header {
     background-color: #263c35;
     color: white;
@@ -17,28 +19,123 @@ header {
     text-align: center;
 }
 
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #d6dfd9;
+}
+
 nav {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 12px;
+    margin: 0 15px;
+    font-size: 16px;
 }
 
-main {
-    padding: 60px 20px;
+nav a:hover {
+    color: #d9b779;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 400px;
+    background: linear-gradient(rgba(20, 40, 32, 0.75), rgba(20, 40, 32, 0.75)),
+                url("https://images.unsplash.com/photo-1507842217343-583bb7270b66");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    color: white;
+    padding: 40px 20px;
 }
 
-main h2 {
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d9b779;
+    color: #263c35;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #c5a15f;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    padding: 60px 20px 35px;
+}
+
+.welcome h2 {
+    color: #263c35;
+    font-size: 30px;
     margin-bottom: 15px;
 }
 
+.welcome p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* Feature Cards */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 40px 60px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: white;
+    width: 280px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card h3 {
+    color: #263c35;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    line-height: 1.6;
+}
+
+/* Footer */
 footer {
     background-color: #263c35;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
 }
