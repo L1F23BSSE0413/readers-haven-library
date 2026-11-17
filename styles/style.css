@@ -88,6 +88,7 @@ footer {
 }
 
 .services-page .service-card {
+    text-align: left;
     background-color: white;
     border: 1px solid #e4dfd4;
     border-top: 4px solid #a77a39;
