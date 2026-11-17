@@ -42,3 +42,135 @@ footer {
     text-align: center;
     padding: 15px;
 }
+
+/* =========================
+   SERVICES PAGE STYLING
+========================= */
+
+.services-page main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 25px;
+}
+
+.services-page .services-intro {
+    background-color: #263c35;
+    color: white;
+    text-align: center;
+    padding: 40px 25px;
+    border-radius: 15px;
+    margin-bottom: 45px;
+}
+
+.services-page .services-tag {
+    color: #e5bd78;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.services-page .services-intro h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.services-page .services-intro p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.services-page .services-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.services-page .service-card {
+    background-color: white;
+    border: 1px solid #e4dfd4;
+    border-top: 4px solid #a77a39;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.services-page .service-card h3 {
+    color: #263c35;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.services-page .service-card p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.services-page .service-card ol,
+.services-page .service-card ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.services-page .timing {
+    background-color: #f4f1ea;
+    color: #704f28;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 13px;
+}
+
+.services-page .services-help {
+    background-color: #e8ede7;
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 12px;
+    margin-top: 45px;
+}
+
+.services-page .services-help h2 {
+    color: #263c35;
+    margin-bottom: 12px;
+}
+
+.services-page .services-help p {
+    max-width: 650px;
+    margin: 0 auto 20px;
+    line-height: 1.7;
+}
+
+.services-page .services-btn {
+    display: inline-block;
+    background-color: #263c35;
+    color: #e5bd78;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.services-page .services-btn:hover {
+    background-color: #1b2b26;
+}
+
+/* Services page: responsive layout */
+@media (max-width: 900px) {
+    .services-page .services-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .services-page .services-list {
+        grid-template-columns: 1fr;
+    }
+
+    .services-page .services-intro h2 {
+        font-size: 26px;
+    }
+}
