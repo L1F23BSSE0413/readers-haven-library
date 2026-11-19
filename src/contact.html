@@ -1,0 +1,503 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Readers Haven Library</title>
+
+    <style>
+
+        /* =========================
+           SHARED STYLING
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f5ef;
+            color: #333;
+        }
+
+        /* HEADER */
+
+        header {
+            background-color: #263c35;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            color: #d6dfd9;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #e5bd78;
+        }
+
+        /* =========================
+           CONTACT PAGE STYLING
+        ========================= */
+
+        .contact-page main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 25px;
+        }
+
+        /* CONTACT INTRO */
+
+        .contact-page .contact-intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contact-page .contact-tag {
+            color: #a77a39;
+            letter-spacing: 3px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .contact-page .contact-intro h2 {
+            color: #263c35;
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .contact-page .contact-intro p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
+            color: #666;
+        }
+
+        /* CONTACT CONTAINER */
+
+        .contact-page .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 30px;
+        }
+
+        /* CONTACT INFORMATION */
+
+        .contact-page .contact-info {
+            background-color: #263c35;
+            color: white;
+            padding: 35px;
+            border-radius: 12px;
+        }
+
+        .contact-page .contact-info h2 {
+            color: #e5bd78;
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        .contact-page .contact-info > p {
+            color: #d6dfd9;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .contact-page .info-item {
+            margin-bottom: 25px;
+        }
+
+        .contact-page .info-item h3 {
+            color: #e5bd78;
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+        .contact-page .info-item p {
+            color: #e0e5e1;
+            line-height: 1.7;
+            overflow-wrap: anywhere;
+        }
+
+        /* CONTACT FORM */
+
+        .contact-page .contact-form {
+            background-color: white;
+            padding: 35px;
+            border-radius: 12px;
+            border: 1px solid #e4dfd4;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+        }
+
+        .contact-page .contact-form h2 {
+            color: #263c35;
+            font-size: 26px;
+            margin-bottom: 25px;
+        }
+
+        .contact-page .form-group {
+            margin-bottom: 20px;
+        }
+
+        .contact-page .form-group label {
+            display: block;
+            color: #263c35;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .contact-page .form-group input,
+        .contact-page .form-group textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #d5d5d5;
+            border-radius: 6px;
+            font-size: 15px;
+            font-family: Arial, sans-serif;
+            outline: none;
+        }
+
+        .contact-page .form-group input:focus,
+        .contact-page .form-group textarea:focus {
+            border-color: #a77a39;
+        }
+
+        .contact-page .form-group textarea {
+            height: 140px;
+            resize: vertical;
+        }
+
+        /* BUTTON */
+
+        .contact-page .submit-btn {
+            width: 100%;
+            background-color: #263c35;
+            color: #e5bd78;
+            border: none;
+            padding: 14px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .contact-page .submit-btn:hover {
+            background-color: #1b2b26;
+        }
+
+        /* EXTRA HELP SECTION */
+
+        .contact-page .contact-help {
+            background-color: #e8ede7;
+            text-align: center;
+            padding: 35px 20px;
+            border-radius: 12px;
+            margin-top: 45px;
+        }
+
+        .contact-page .contact-help h2 {
+            color: #263c35;
+            margin-bottom: 12px;
+        }
+
+        .contact-page .contact-help p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #263c35;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* =========================
+           RESPONSIVE DESIGN
+        ========================= */
+
+        /* TABLET */
+
+        @media (max-width: 900px) {
+
+            .contact-page .contact-container {
+                grid-template-columns: 1fr 1.3fr;
+                gap: 20px;
+            }
+
+            .contact-page .contact-info,
+            .contact-page .contact-form {
+                padding: 25px;
+            }
+
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 768px) {
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            .contact-page main {
+                padding: 25px 15px;
+            }
+
+            .contact-page .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-page .contact-intro h2 {
+                font-size: 28px;
+            }
+
+            .contact-page .contact-info,
+            .contact-page .contact-form {
+                padding: 25px 20px;
+            }
+
+            .contact-page .contact-info h2,
+            .contact-page .contact-form h2 {
+                font-size: 23px;
+            }
+
+            .contact-page .contact-help {
+                padding: 25px 15px;
+            }
+
+        }
+
+        /* SMALL MOBILE */
+
+        @media (max-width: 480px) {
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            header {
+                padding: 20px 10px;
+            }
+
+            nav a {
+                font-size: 14px;
+                margin: 6px;
+            }
+
+            .contact-page .contact-intro h2 {
+                font-size: 25px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body class="contact-page">
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>Readers Haven Library</h1>
+
+        <p>Your Gateway to Knowledge and Imagination</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="membership.html">Membership</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+
+        <!-- INTRODUCTION -->
+
+        <section class="contact-intro">
+
+            <p class="contact-tag">GET IN TOUCH</p>
+
+            <h2>Contact & Feedback</h2>
+
+            <p>
+                Have a question or suggestion?
+                We would love to hear from you.
+                Contact Readers Haven Library for information
+                about our books, membership, and services.
+            </p>
+
+        </section>
+
+
+        <!-- CONTACT INFORMATION AND FORM -->
+
+        <section class="contact-container">
+
+            <!-- ADDRESS, PHONE AND EMAIL -->
+
+            <div class="contact-info">
+
+                <h2>Contact Information</h2>
+
+                <p>
+                    You can reach us through the following
+                    contact details. We are always happy to help
+                    our readers.
+                </p>
+
+                <div class="info-item">
+
+                    <h3>Our Address</h3>
+
+                    <p>
+                        Readers Haven Library<br>
+                        Lahore, Pakistan
+                    </p>
+
+                </div>
+
+                <div class="info-item">
+
+                    <h3>Phone Number</h3>
+
+                    <p>+92 300 1234567</p>
+
+                </div>
+
+                <div class="info-item">
+
+                    <h3>Email Address</h3>
+
+                    <p>info@readershaven.com</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FEEDBACK FORM -->
+
+            <div class="contact-form">
+
+                <h2>Send Us a Message</h2>
+
+                <form action="#" method="post">
+
+                    <div class="form-group">
+
+                        <label for="name">Your Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">Your Message</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Write your message here..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="submit-btn">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- HELP SECTION -->
+
+        <section class="contact-help">
+
+            <h2>We're Here to Help!</h2>
+
+            <p>
+                Thank you for being a part of Readers Haven Library.
+                Your feedback and suggestions help us improve
+                our services and create a better reading experience.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Readers Haven Library.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
