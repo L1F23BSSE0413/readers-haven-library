@@ -1,7 +1,6 @@
 
 /* =========================
    SHARED STYLING
-========================= */
 
 * {
     margin: 0;
@@ -11,10 +10,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f1ea;
+    background-color: #f7f5ef;
     color: #333;
 }
 
+/* Header */
 header {
     background-color: #263c35;
     color: white;
@@ -22,14 +22,24 @@ header {
     text-align: center;
 }
 
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #d6dfd9;
+}
+
 nav {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 12px;
+    margin: 0 15px;
+    font-size: 16px;
 }
 
 nav a:hover {
@@ -46,7 +56,6 @@ footer {
 
 /* =========================
    HOMEPAGE STYLING
-========================= */
 
 .home-page main {
     padding: 0;
@@ -147,7 +156,6 @@ footer {
 
 /* =========================
    MEMBERSHIP PAGE STYLING
-========================= */
 
 .membership-page main {
     max-width: 1200px;
@@ -362,7 +370,6 @@ footer {
 
 /* =========================
    RESPONSIVE DESIGN
-========================= */
 
 @media (max-width: 768px) {
 
