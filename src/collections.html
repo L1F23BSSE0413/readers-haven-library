@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections | Readers' Haven Public Library</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <style>
+        .book-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .book-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 8px 20px rgba(38, 60, 53, 0.18);
+        }
+
+        .category-link:hover {
+            background-color: #526b5e !important;
+        }
+
+        @media (max-width: 768px) {
+            .book-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+
+            .collections-main {
+                padding: 30px 5% !important;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .book-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            .collections-hero h2 {
+                font-size: 27px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <h1>Readers' Haven Public Library</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="membership.html">Membership</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="collections-main" style="padding: 50px 7%;">
+
+        <!-- Hero Section -->
+
+        <section class="collections-hero"
+            style="background-color: #e8e6dc; text-align: center; padding: 45px 20px; border-radius: 12px; margin-bottom: 35px;">
+
+            <h2 style="color: #263c35; font-size: 34px; margin-bottom: 15px;">
+                Explore Our Collections
+            </h2>
+
+            <p style="color: #555; font-size: 16px; line-height: 1.7; max-width: 700px; margin: auto;">
+                Welcome to Readers' Haven! Discover inspiring stories,
+                expand your knowledge, and explore books from different
+                fields. There is something special for every reader.
+            </p>
+
+        </section>
+
+        <!-- Category Navigation -->
+
+        <section style="text-align: center; margin-bottom: 45px;">
+
+            <h2 style="color: #263c35; margin-bottom: 20px;">
+                Browse By Category
+            </h2>
+
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 12px;">
+
+                <a class="category-link" href="#fiction"
+                    style="background-color: #263c35; color: white; padding: 12px 22px; border-radius: 25px; text-decoration: none;">
+                    Fiction
+                </a>
+
+                <a class="category-link" href="#nonfiction"
+                    style="background-color: #263c35; color: white; padding: 12px 22px; border-radius: 25px; text-decoration: none;">
+                    Non-Fiction
+                </a>
+
+                <a class="category-link" href="#children"
+                    style="background-color: #263c35; color: white; padding: 12px 22px; border-radius: 25px; text-decoration: none;">
+                    Children's Corner
+                </a>
+
+                <a class="category-link" href="#reference"
+                    style="background-color: #263c35; color: white; padding: 12px 22px; border-radius: 25px; text-decoration: none;">
+                    Reference
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Fiction -->
+
+        <section id="fiction" style="margin-bottom: 55px; scroll-margin-top: 25px;">
+
+            <h2 style="color: #263c35; font-size: 28px; border-left: 5px solid #263c35; padding-left: 14px;">
+                Fiction
+            </h2>
+
+            <p style="color: #666; margin: 15px 0 22px; line-height: 1.6;">
+                Explore imaginative worlds, unforgettable characters,
+                and exciting stories.
+            </p>
+
+            <div class="book-grid"
+                style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+
+                <article class="book-card"
+                    style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+
+                    <div style="background: #263c35; color: #f4f1ea; height: 170px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 15px;">
+                        <span style="font-size: 12px; letter-spacing: 3px;">READERS' HAVEN</span>
+                        <h3 style="font-size: 25px; margin-top: 15px;">The Alchemist</h3>
+                    </div>
+
+                    <div style="padding: 20px;">
+                        <h3 style="color: #263c35; margin-bottom: 8px;">The Alchemist</h3>
+                        <p style="color: #526b5e; font-weight: bold; font-size: 14px;">Paulo Coelho</p>
+                        <p style="color: #666; font-size: 14px; line-height: 1.6; margin-top: 10px;">
+                            A young shepherd travels in search of treasure and discovers the importance of following his dreams.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="book-card"
+                    style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+
+                    <div style="background: #526b5e; color: #f4f1ea; height: 170px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 15px;">
+                        <span style="font-size: 12px; letter-spacing: 3px;">READERS' HAVEN</span>
+                        <h3 style="font-size: 25px; margin-top: 15px;">Pride and Prejudice</h3>
+                    </div>
+
+                    <div style="padding: 20px;">
+                        <h3 style="color: #263c35; margin-bottom: 8px;">Pride and Prejudice</h3>
+                        <p style="color: #526b5e; font-weight: bold; font-size: 14px;">Jane Austen</p>
+                        <p style="color: #666; font-size: 14px; line-height: 1.6; margin-top: 10px;">
+                            A classic story about love, relationships, social expectations, and personal growth.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="book-card"
+                    style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+
+                    <div style="background: #68745f; color: #f4f1ea; height: 170px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 15px;">
+                        <span style="font-size: 12px; letter-spacing: 3px;">READERS' HAVEN</span>
+                        <h3 style="font-size: 25px; margin-top: 15px;">The Great Gatsby</h3>
+                    </div>
+
+                    <div style="padding: 20px;">
+                        <h3 style="color: #263c35; margin-bottom: 8px;">The Great Gatsby</h3>
+                        <p style="color: #526b5e; font-weight: bold; font-size: 14px;">F. Scott Fitzgerald</p>
+                        <p style="color: #666; font-size: 14px; line-height: 1.6; margin-top: 10px;">
+                            A fascinating novel about wealth, ambition, love, and the American Dream.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Non-Fiction -->
+
+        <section id="nonfiction" style="margin-bottom: 55px; scroll-margin-top: 25px;">
+
+            <h2 style="color: #263c35; font-size: 28px; border-left: 5px solid #263c35; padding-left: 14px;">
+                Non-Fiction
+            </h2>
+
+            <p style="color: #666; margin: 15px 0 22px; line-height: 1.6;">
+                Learn from real experiences, discover new ideas, and improve yourself.
+            </p>
+
+            <div class="book-grid"
+                style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+
+                <article class="book-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    <div style="background: #263c35; color: #f4f1ea; height: 170px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 15px;">
+                        <span style="font-size: 12px; letter-spacing: 3px;">READERS' HAVEN</span>
+                        <h3 style="font-size: 25px; margin-top: 15px;">Atomic Habits</h3>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="color: #263c35; margin-bottom: 8px;">Atomic Habits</h3>
+                        <p style="color: #526b5e; font-weight: bold; font-size: 14px;">James Clear</p>
+                        <p style="color: #666; font-size: 14px; line-height: 1.6; margin-top: 10px;">
+                            A practical guide to building good habits and making small improvements every day.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="book-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    <div style="background: #526b5e; color: #f4f1ea; height: 170px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 15px;">
+                        <span style="font-size: 12px; letter-spacing: 3px;">READERS' HAVEN</span>
+                        <h3 style="font-size: 25px; margin-top: 15px;">Sapiens</h3>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="color: #263c35; margin-bottom: 8px;">Sapiens</h3>
+                        <p style="color: #526b5e; font-weight: bold; font-size: 14px;">Yuval Noah Harari</p>
+                        <p style="color: #666; font-size: 14px; line-height: 1.6; margin-top: 10px;">
+                            An exploration of human history, civilization, and the development of societies.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="book-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    <div style="background: #68745f; color: #f4f1ea; height: 170px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 15px;">
+                        <span style="font-size: 12px; letter-spacing: 3px;">READERS' HAVEN</span>
+                        <h3 style="font-size: 25px; margin-top: 15px;">Educated</h3>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="color: #263c35; margin-bottom: 8px;">Educated</h3>
+                        <p style="color: #526b5e; font-weight: bold; font-size: 14px;">Tara Westover</p>
+                        <p style="color: #666; font-size: 14px; line-height: 1.6; margin-top: 10px;">
+                            A memoir about education, self-discovery, and the power of learning.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Children's Corner -->
+
+        <section id="children" style="margin-bottom: 55px; scroll-margin-top: 25px;">
+
+            <h2 style="color: #263c35; font-size: 28px; border-left: 5px solid #263c35; padding-left: 14px;">
+                Children's Corner
+            </h2>
+
+            <p style="color: #666; margin: 15px 0 22px; line-height: 1.6;">
+                Fun, imagination, and adventure come together in stories for young readers.
+            </p>
+
+            <div class="book-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+
+                <article class="book-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    <div style="background: #263c35; color: #f4f1ea; height: 170px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 15px;">
+                        <span style="font-size: 12px; letter-spacing: 3px;">READERS' HAVEN</span>
+                        <h3 style="font-size: 25px; margin-top: 15px;">Matilda</h3>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="color: #263c35; margin-bottom: 8px;">Matilda</h3>
+                        <p style="color: #526b5e; font-weight: bold; font-size: 14px;">Roald Dahl</p>
+                        <p style="color: #666; font-size: 14px; line-height: 1.6; margin-top: 10px;">
+                            The story of a brilliant young girl who discovers her extraordinary abilities.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="book-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    <div style="background: #526b5e; color: #f4f1ea; height: 170px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 15px;">
+                        <span style="font-size: 12px; letter-spacing: 3px;">READERS' HAVEN</span>
+                        <h3 style="font-size: 25px; margin-top: 15px;">Charlotte's Web</h3>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="color: #263c35; margin-bottom: 8px;">Charlotte's Web</h3>
+                        <p style="color: #526b5e; font-weight: bold; font-size: 14px;">E. B. White</p>
+                        <p style="color: #666; font-size: 14px; line-height: 1.6; margin-top: 10px;">
+                            A heartwarming tale of friendship between a pig named Wilbur and a spider named Charlotte.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="book-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    <div style="background: #68745f; color: #f4f1ea; height: 170px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 15px;">
+                        <span style="font-size: 12px; letter-spacing: 3px;">READERS' HAVEN</span>
+                        <h3 style="font-size: 25px; margin-top: 15px;">The Jungle Book</h3>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="color: #263c35; margin-bottom: 8px;">The Jungle Book</h3>
+                        <p style="color: #526b5e; font-weight: bold; font-size: 14px;">Rudyard Kipling</p>
+                        <p style="color: #666; font-size: 14px; line-height: 1.6; margin-top: 10px;">
+                            An adventurous story following Mowgli as he grows up among animals in the jungle.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Reference Books -->
+
+        <section id="reference" style="margin-bottom: 55px; scroll-margin-top: 25px;">
+
+            <h2 style="color: #263c35; font-size: 28px; border-left: 5px solid #263c35; padding-left: 14px;">
+                Reference Books
+            </h2>
+
+            <p style="color: #666; margin: 15px 0 22px; line-height: 1.6;">
+                Find useful information and support your academic and research journey.
+            </p>
+
+            <div class="book-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+
+                <article class="book-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    <div style="background: #263c35; color: #f4f1ea; height: 170px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 15px;">
+                        <span style="font-size: 12px; letter-spacing: 3px;">READERS' HAVEN</span>
+                        <h3 style="font-size: 25px; margin-top: 15px;">Oxford Dictionary</h3>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="color: #263c35; margin-bottom: 8px;">Oxford Dictionary</h3>
+                        <p style="color: #526b5e; font-weight: bold; font-size: 14px;">Oxford University Press</p>
+                        <p style="color: #666; font-size: 14px; line-height: 1.6; margin-top: 10px;">
+                            A valuable language reference for understanding word meanings, spelling, and usage.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="book-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    <div style="background: #526b5e; color: #f4f1ea; height: 170px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 15px;">
+                        <span style="font-size: 12px; letter-spacing: 3px;">READERS' HAVEN</span>
+                        <h3 style="font-size: 25px; margin-top: 15px;">Encyclopedia</h3>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="color: #263c35; margin-bottom: 8px;">Encyclopedia Britannica</h3>
+                        <p style="color: #526b5e; font-weight: bold; font-size: 14px;">Encyclopaedia Britannica</p>
+                        <p style="color: #666; font-size: 14px; line-height: 1.6; margin-top: 10px;">
+                            A comprehensive reference source covering knowledge across many subjects.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="book-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    <div style="background: #68745f; color: #f4f1ea; height: 170px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 15px;">
+                        <span style="font-size: 12px; letter-spacing: 3px;">READERS' HAVEN</span>
+                        <h3 style="font-size: 25px; margin-top: 15px;">World Atlas</h3>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="color: #263c35; margin-bottom: 8px;">World Atlas</h3>
+                        <p style="color: #526b5e; font-weight: bold; font-size: 14px;">Geographical Reference</p>
+                        <p style="color: #666; font-size: 14px; line-height: 1.6; margin-top: 10px;">
+                            Explore countries, continents, maps, and geographical features of our world.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Closing Section -->
+
+        <section style="background-color: #e8e6dc; padding: 35px 20px; text-align: center; border-radius: 12px; margin-bottom: 20px;">
+
+            <h2 style="color: #263c35; margin-bottom: 12px;">
+                Discover Something New Today!
+            </h2>
+
+            <p style="color: #555; line-height: 1.7;">
+                Every book is an opportunity to learn, imagine, and grow.
+                Visit Readers' Haven and find your next favourite read.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>&copy; 2026 Readers' Haven Public Library</p>
+    </footer>
+
+</body>
+</html>

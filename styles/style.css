@@ -1,4 +1,7 @@
 
+/* =========================
+   SHARED STYLING
+
 * {
     margin: 0;
     padding: 0;
@@ -40,16 +43,36 @@ nav a {
 }
 
 nav a:hover {
-    color: #d9b779;
+    color: #e5bd78;
 }
 
-/* Hero Section */
-.hero {
+footer {
+    background-color: #263c35;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* =========================
+   HOMEPAGE STYLING
+
+.home-page main {
+    padding: 0;
+    text-align: center;
+}
+
+.home-page .hero {
     min-height: 400px;
-    background: linear-gradient(rgba(20, 40, 32, 0.75), rgba(20, 40, 32, 0.75)),
-                url("https://images.unsplash.com/photo-1507842217343-583bb7270b66");
+    background: linear-gradient(
+        rgba(20, 40, 32, 0.75),
+        rgba(20, 40, 32, 0.75)
+    ),
+    url("https://images.unsplash.com/photo-1507842217343-583bb7270b66");
+
     background-size: cover;
     background-position: center;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,22 +81,22 @@ nav a:hover {
     padding: 40px 20px;
 }
 
-.hero-content {
+.home-page .hero-content {
     max-width: 700px;
 }
 
-.hero h2 {
+.home-page .hero h2 {
     font-size: 42px;
     margin-bottom: 20px;
 }
 
-.hero p {
+.home-page .hero p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 30px;
 }
 
-.btn {
+.home-page .btn {
     display: inline-block;
     background-color: #d9b779;
     color: #263c35;
@@ -83,30 +106,28 @@ nav a:hover {
     font-weight: bold;
 }
 
-.btn:hover {
+.home-page .btn:hover {
     background-color: #c5a15f;
 }
 
-/* Welcome Section */
-.welcome {
+.home-page .welcome {
     text-align: center;
     padding: 60px 20px 35px;
 }
 
-.welcome h2 {
+.home-page .welcome h2 {
     color: #263c35;
     font-size: 30px;
     margin-bottom: 15px;
 }
 
-.welcome p {
+.home-page .welcome p {
     max-width: 700px;
     margin: auto;
     line-height: 1.7;
 }
 
-/* Feature Cards */
-.features {
+.home-page .features {
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -114,7 +135,7 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-.feature-card {
+.home-page .feature-card {
     background-color: white;
     width: 280px;
     padding: 30px 20px;
@@ -123,19 +144,276 @@ nav a:hover {
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
 }
 
-.feature-card h3 {
+.home-page .feature-card h3 {
     color: #263c35;
     margin-bottom: 15px;
 }
 
-.feature-card p {
+.home-page .feature-card p {
     line-height: 1.6;
 }
 
-/* Footer */
-footer {
+
+/* =========================
+   MEMBERSHIP PAGE STYLING
+
+.membership-page main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 25px;
+}
+
+/* Hero Section */
+
+.membership-page .membership-hero {
+    display: flex;
+    align-items: center;
+    gap: 35px;
     background-color: #263c35;
     color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: left;
+    margin-bottom: 65px;
+}
+
+.membership-page .hero-content {
+    flex: 1;
+}
+
+.membership-page .hero-tag {
+    color: #e5bd78;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.membership-page .hero-content h2 {
+    font-size: 35px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.membership-page .hero-content p {
+    line-height: 1.8;
+}
+
+.membership-page .membership-hero img {
+    width: 45%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Plans Section */
+
+.membership-page .section-heading {
+    margin-bottom: 35px;
+}
+
+.membership-page .small-heading {
+    color: #a77a39;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.membership-page .section-heading h2 {
+    color: #263c35;
+    font-size: 30px;
+}
+
+.membership-page .section-heading > p:last-child {
+    color: #666;
+}
+
+/* Membership Cards */
+
+.membership-page .membership-plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: stretch;
+}
+
+.membership-page .plan {
+    background-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: left;
+    border: 1px solid #e4dfd4;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease;
+}
+
+.membership-page .plan:hover {
+    transform: translateY(-7px);
+}
+
+.membership-page .plan img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.membership-page .plan-content {
+    padding: 25px;
+}
+
+.membership-page .plan h3 {
+    color: #263c35;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.membership-page .fee {
+    color: #a77a39;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.membership-page .fee span {
+    font-size: 14px;
+    color: #777;
+    font-weight: normal;
+}
+
+.membership-page .plan ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.membership-page .plan li {
+    padding: 9px 0;
+    border-bottom: 1px solid #eee9df;
+    color: #555;
+    font-size: 14px;
+}
+
+.membership-page .plan li::before {
+    content: "✓ ";
+    color: #527b61;
+    font-weight: bold;
+}
+
+.membership-page .late-fee {
+    background-color: #f4f1ea;
+    padding: 12px;
+    border-radius: 7px;
+    font-size: 13px;
+    color: #704f28;
+    line-height: 1.5;
+}
+
+.membership-page .popular-plan {
+    border: 2px solid #b88b4a;
+}
+
+.membership-page .popular-label {
+    display: inline-block;
+    background-color: #e9d5ad;
+    color: #65451e;
+    padding: 6px 10px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+/* Late Return Rules */
+
+.membership-page .late-rules {
+    background-color: #e8ede7;
+    margin-top: 65px;
+    padding: 35px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.membership-page .late-rules h2 {
+    color: #263c35;
     text-align: center;
-    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.membership-page .late-rules ul {
+    max-width: 750px;
+    margin: auto;
+    line-height: 2;
+    color: #444;
+    padding-left: 22px;
+}
+
+/* Bottom Section */
+
+.membership-page .membership-bottom {
+    background-color: #263c35;
+    color: white;
+    padding: 35px 20px;
+    margin-top: 35px;
+    border-radius: 12px;
+}
+
+.membership-page .membership-bottom h2 {
+    color: #e5bd78;
+}
+
+.membership-page .membership-bottom p {
+    line-height: 1.7;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+
+@media (max-width: 768px) {
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .home-page .hero h2 {
+        font-size: 30px;
+    }
+
+    .home-page .features {
+        padding: 25px 15px 40px;
+    }
+
+    .membership-page main {
+        padding: 25px 15px;
+    }
+
+    .membership-page .membership-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 22px;
+    }
+
+    .membership-page .hero-content h2 {
+        font-size: 27px;
+    }
+
+    .membership-page .membership-hero img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .membership-page .membership-plans {
+        grid-template-columns: 1fr;
+    }
+
+    .membership-page .plan img {
+        height: 220px;
+    }
+
+    .membership-page .late-rules {
+        padding: 25px 18px;
+    }
 }
